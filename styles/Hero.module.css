@@ -1,46 +1,44 @@
-
-.container{
+.container {
     width: auto;
     height: 285px;
     position: relative;
 }
 
-.img{
+.img {
     width: 1184.5px;
     height: 330px;
     margin-left: -22.5px;
     margin-top: -17px;
 }
 
-.right{
+.right {
     width: 650px;
     height: auto;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-direction: column;
-    gap: 12px; 
+    gap: 12px;
     float: right;
     position: absolute;
     top: 8%;
     right: -3%;
-    
 }
 
-.lists{
+.lists {
     list-style: none;
     text-decoration: none;
     display: flex;
 }
-.list{
+.list {
     color: white;
     padding: 0 0.2rem;
-    font-size:large;
+    font-size: large;
     cursor: pointer;
 }
 
 /* buttons group */
 
-.first{
+.first {
     width: 650px;
     height: auto;
     display: flex;
@@ -48,10 +46,9 @@
     justify-content: content;
     align-items: center;
     /* justify-content: center;  */
-   
 }
 
-.firstgp{
+.firstgp {
     width: 187px;
     height: 43px;
     border: 2px solid white;
@@ -61,9 +58,8 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-   
 }
-.second{
+.second {
     width: 187px;
     height: 43px;
     border: 2px solid white;
@@ -74,116 +70,121 @@
     align-items: center;
     overflow: hidden;
 }
-.firstgp input{
+.firstgp input {
     background-color: transparent;
     outline: none;
     border: none;
     color: white;
-    width: 120px ;
+    width: 120px;
 }
-.firstgp input ::placeholder{
+.firstgp input ::placeholder {
     color: white;
     font-weight: 800;
 }
 
-.btn{
+.btn {
     border-left: 2px solid white;
     height: 100%;
     width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6C757D;
+    background-color: #6c757d;
     margin-right: -20px;
 }
-.rightbtn{
+.rightbtn {
     border-left: 2px solid white;
     height: 100%;
     width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6C757D;
+    background-color: #6c757d;
     cursor: pointer;
     /* margin-right: -20px; */
 }
-.rightbtn:hover{
-    background-color: #FBB900;
+.rightbtn:hover {
+    background-color: #fbb900;
 }
-.leftbtn{
+.leftbtn {
     border-right: 2px solid white;
     height: 100%;
     width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6C757D;
+    background-color: #6c757d;
     /* margin-right: -20px; */
 }
 
-.selected{
+.selected {
     width: "120px";
 }
 
-.filter{
+.filter {
     width: 90%;
     color: white;
     display: flex;
     justify-content: end;
 }
-.filter p{
+.filter p {
     width: auto;
 }
 
-.lastsection{
+.lastsection {
     width: 90%;
     height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
 }
 
-.last_first{
+.last_first {
     width: 40%;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
-.last{
+.last {
     width: 60%;
     height: 50px;
-     background-color: #FBB900;
-     display: flex;
-     justify-content: center;
-     color: white;
-     font-weight: bold;
-     border-top-left-radius: 10px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    background-color: #fbb900;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
-.option_btn_wrapper{
+.option_btn_wrapper {
     position: relative;
     width: 29%;
 }
-.optonList{
+.optonList {
     position: absolute;
     left: 10%;
-  
+
     width: 80%;
-    background-color: #6C757D;
+    background-color: #6c757d;
     color: white;
     list-style: none;
     z-index: 999;
 }
 
-.optonList > li{
+.optonList > li {
     padding: 2px;
     padding-left: 10px;
     text-decoration: none !important;
     border-bottom: 1px solid white;
 }
 
-.optonList > li:hover{
-    background-color: #FBB900;
+.optonList > li:hover {
+    background-color: #fbb900;
+}
+.btnh:hover {
+    color: #fbb900;
 }
