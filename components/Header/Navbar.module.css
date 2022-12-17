@@ -1,0 +1,158 @@
+.container {
+    width: 100%;
+    height: auto;
+    padding: 35px 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 10px -15px #000000;
+    z-index: 999;
+}
+
+.wrapper {
+    width: 1140px;
+    /* width: 100%; */
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.img {
+    width: auto;
+    height: 80px;
+    object-fit: cover;
+}
+
+.lists {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.list {
+    padding: 0 0.5rem;
+    font-size: large;
+    cursor: pointer;
+}
+
+.list .icon {
+    color: #FBB900;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+
+.list .circle {
+    padding: 3px 3px;
+    border-radius: 35px;
+    height: 32px;
+    border: 3px solid #FBB900;
+    color: #FBB900;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover {
+    color: white;
+    border: 3px solid white;
+}
+
+.circle:hover>.icon {
+    color: white;
+}
+
+.list .icon:hover{
+    color: white;
+
+}
+
+.searchbox {
+    width: 0px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    float: left;
+    transition: width .55s ease;
+    color: white;
+}
+
+.searchbox::placeholder {
+    font-size: 12px;
+    color: white;
+    padding-left: 8px;
+}
+
+.list .circle:hover>.searchbox,
+.searchbox:focus, .searchbox:active {
+    width: 150px;
+}
+
+.prflicon{
+    font-size: 2rem;
+    color: #FBB900;
+    z-index: 999;
+}
+.prflicon:hover{
+    color: white !important;
+}
+.prfle{
+    width: 185px;
+    z-index: 999;
+}
+
+.account_sec{
+    width: 185px;
+    height: auto;
+    /* padding: 6px 8px; */
+    background-color: #C3C3C3;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: -7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* for mobile screen */
+
+.mblnav {
+    width: 202px;
+    height: 163px;
+    background-color: #6C757D;
+    position: absolute;
+}
+
+
+
+
+/* responsive site */
+
+@media (min-width: 275px) and (max-width: 400px) {
+    .lists {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .img {
+        width: 150px;
+        height: 50px;
+    }
+}
+

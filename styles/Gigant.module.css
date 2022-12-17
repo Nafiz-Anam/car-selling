@@ -1,0 +1,61 @@
+.car_types {
+    background-color: #f1f2f3;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 30px 20px 30px;
+    border-radius: 10px;
+}
+
+.cars {
+    width: 20%;
+    height: auto;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.listHead {
+    font-weight: 900;
+}
+
+.cars li {
+    color: #0067b8;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.newspaper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.input {
+    width: 400px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: "Roboto";
+    color: #6c757d;
+    text-align: left;
+}
+
+.submit {
+    width: 300px;
+    height: 40px;
+    background-color: #6c757d;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: "20px";
+    font-weight: bold;
+}
+.submit:hover {
+    background-color: #fbb900;
+}

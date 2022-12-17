@@ -1,0 +1,15 @@
+
+.container{
+  width: 100%;
+  height: auto;
+  background-color: #6C757D;
+  display: flex;
+  justify-content: center
+}
+
+.wrapper{
+  width: 1140px;
+  height: auto;
+  /* background-color: rgb(201, 191, 191); */
+  /* overflow: hidden; */
+}
