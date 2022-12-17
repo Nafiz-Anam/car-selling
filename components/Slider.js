@@ -173,6 +173,21 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 
 const Slider = () => {
     const [showmore, setshowmore] = useState(false);
+    const [showmore2, setshowmore2] = useState(false);
+    const [count, setCount] = useState(1);
+    console.log(count);
+
+    const seeMore = () => {
+        setCount(count + 1);
+        console.log("=>", count);
+        if (count === 1) {
+            setshowmore(true);
+        } else if (count === 2) {
+            setshowmore2(true);
+        }
+    };
+
+    const limit = 16;
 
     const options = {
         // margin: 30,
@@ -297,7 +312,7 @@ const Slider = () => {
                     ""
                 )}
 
-                {/* {showmore ? (
+                {showmore2 ? (
                     <div className={styles.cart_slide}>
                         <OwlCarousel
                             className="owl-theme"
@@ -325,16 +340,13 @@ const Slider = () => {
                     </div>
                 ) : (
                     ""
-                )} */}
+                )}
 
-                {showmore ? (
+                {showmore2 ? (
                     ""
                 ) : (
                     <div className={styles.slider_accordian}>
-                        <div
-                            className={styles.btn}
-                            onClick={(e) => setshowmore(!showmore)}
-                        >
+                        <div className={styles.btn} onClick={seeMore}>
                             <span className={styles.btnName}>
                                 {!showmore ? <span>+</span> : ""} Weitere
                                 Fahrzeuge

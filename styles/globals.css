@@ -57,3 +57,7 @@ a {
 .owl-carousel .owl-nav button.owl-next:hover {
     background-color: transparent !important;
 }
+
+.owl-carousel {
+    z-index: 1;
+}
